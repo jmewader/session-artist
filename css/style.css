@@ -71,13 +71,23 @@ a {
 }
 
 .search-block {
+  display: flex;
   width: 100%;
   max-width: 360px;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  z-index: 100;
+}
+
+.search-block svg {
+  position: absolute;
+  right: 11px;
 }
 
 .search-block__input {
   min-height: 45px;
-  padding: 0px 20px;
+  padding: 0px 40px 0px 20px;
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   width: 100%;
@@ -197,6 +207,8 @@ a {
   font-size: 24px;
   line-height: 29px;
   margin: 0 0 35px;
+  position: relative;
+  z-index: 100;
 }
 
 .offer .offer__list {
@@ -291,7 +303,7 @@ a {
   height: 40px;
 }
 
-.social__item:hover img {
+.social__item:hover svg {
   opacity: 0.7;
 }
 
