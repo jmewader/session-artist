@@ -60,6 +60,75 @@ a {
   background-color: transparent;
 }
 
+.button {
+  min-height: 45px;
+  min-width: 165px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s;
+  background-color: var(--main-bg-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--white-text-color);
+}
+
+.button:hover {
+  background-color: #007163cc;
+}
+
+.button-green-border {
+  background-color: transparent;
+  min-height: 45px;
+  min-width: 165px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid #007163;
+  color: #007163;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.button-green-border:hover {
+  background-color: #0071630d;
+}
+
+.button-green-border-light {
+  background: rgba(0, 113, 99, 0.1);
+  min-height: 45px;
+  min-width: 165px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid #007163;
+  color: #007163;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.button-green-border-light:hover {
+  background-color: #00716338;
+}
+
+.button-brown {
+  min-height: 45px;
+  min-width: 165px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: rgba(166, 124, 82, 0.1);
+  border: 1px solid #a67c52;
+  border-radius: 5px;
+  color: #a67c52;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.button-brown:hover {
+  background-color: #a67c5238;
+}
+
 /*HEADER*/
 
 .header__wrap {
@@ -106,25 +175,6 @@ a {
   align-items: center;
   align-content: center;
   gap: 30px;
-}
-
-.button {
-  background-color: transparent;
-  min-height: 45px;
-  min-width: 165px;
-  font-weight: 600;
-  font-size: 16px;
-  border: 1px solid #007163;
-  color: #007163;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.fill {
-  background-color: var(--main-bg-color);
-  border: none;
-  border-radius: 5px;
-  color: var(--white-text-color);
 }
 
 /*OFFER*/
@@ -305,19 +355,6 @@ a {
 
 .social__item:hover svg {
   opacity: 0.7;
-}
-
-.button-brown {
-  background-color: rgba(166, 124, 82, 0.1);
-  border: 1px solid #a67c52;
-  border-radius: 5px;
-  color: #a67c52;
-}
-
-.button-green {
-  background-color: rgba(0, 113, 99, 0.1);
-  border: 1px solid #007163;
-  color: #007163;
 }
 
 /*FOOTER*/
