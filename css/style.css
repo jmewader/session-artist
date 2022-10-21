@@ -10,6 +10,7 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   color: #000;
   font-family: "Inter", sans-serif;
@@ -47,6 +48,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  flex: 1 1 auto;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -58,6 +63,10 @@ a {
   padding: 0 30px;
   box-sizing: border-box;
   background-color: transparent;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
@@ -131,7 +140,7 @@ a {
 
 /*HEADER*/
 
-.header__wrap {
+header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -360,16 +369,15 @@ a {
 /*FOOTER*/
 
 footer {
-  padding: 0 0 20px;
-}
-
-.footer__nav {
+  flex-direction: column;
   display: flex;
   width: 100%;
-  margin: 0 0 33px;
+  margin: 20px 0 33px;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer__nav ul {
+footer ul {
   display: flex;
   width: 100%;
   list-style: none;
@@ -378,6 +386,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin: 0 0 30px;
 }
 
 .footer__nav-item {
