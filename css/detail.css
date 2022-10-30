@@ -1,0 +1,137 @@
+.detail {
+  width: 100%;
+}
+
+.detail__title {
+  display: flex;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+}
+
+.detail__title_wrap {
+  position: relative;
+}
+
+.detail__title_wrap:before {
+  position: absolute;
+  right: 0;
+  bottom: 9px;
+  z-index: -1;
+  width: 50%;
+  border-bottom: 6px solid #a67c52;
+  content: "";
+}
+
+.tabs {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  gap: 104px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px 50px;
+}
+
+.tabs__item {
+  cursor: pointer;
+}
+
+.green-border {
+  border-bottom: 2px solid #007163;
+  border-radius: 2px;
+  line-height: 43px;
+}
+
+.people-list {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  gap: 30px;
+  margin: 30px 0px 40px;
+}
+
+.people-list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 30px;
+  border: 1px solid #d6d0c1;
+  border-radius: 5px;
+}
+
+.people-list__wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 14px;
+  border-bottom: 1px solid #d6d0c1;
+  margin: 0px 0px 20px;
+  font-size: 16px;
+}
+
+.people-list__name {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+.people-list__text {
+  font-style: italic;
+  line-height: 22px;
+}
+
+.people-list__actions {
+  width: 100%;
+  margin: 30px 0px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.people-list__price {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.brown-text {
+  color: #a67c52;
+  font-weight: 700;
+}
+
+/*PAGINATION*/
+
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 35px;
+  height: 35px;
+  border: 1px solid #007163;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.pagination__item_green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 35px;
+  height: 35px;
+  background-color: #007163;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
