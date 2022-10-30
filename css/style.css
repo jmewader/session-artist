@@ -69,6 +69,23 @@ main {
   flex-direction: column;
 }
 
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+  min-width: 134px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s;
+  background-color: var(--main-bg-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--white-text-color);
+}
+
 .button {
   min-height: 45px;
   min-width: 165px;

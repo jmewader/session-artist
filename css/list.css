@@ -1,8 +1,8 @@
-.detail {
+.list {
   width: 100%;
 }
 
-.detail__title {
+.list__title {
   display: flex;
   font-family: "Oswald";
   font-style: normal;
@@ -11,11 +11,11 @@
   line-height: 53px;
 }
 
-.detail__title_wrap {
+.list__title_wrap {
   position: relative;
 }
 
-.detail__title_wrap:before {
+.list__title_wrap:before {
   position: absolute;
   right: 0;
   bottom: 9px;
@@ -32,7 +32,7 @@
   gap: 104px;
   justify-content: center;
   align-items: center;
-  margin: 30px 0px 50px;
+  margin: 10px 0px 50px;
 }
 
 .tabs__item {
