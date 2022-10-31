@@ -10,219 +10,221 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <a href="/"><img src="./images/logo.png" alt="logo" /></a>
+    <div class="blur">
+      <div class="container">
+        <header>
+          <a href="/"><img src="./images/logo.png" alt="logo" /></a>
 
-        <div class="search-block">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19.7256 18.9889L15.2097 14.4538C16.5957 12.8665 17.3604 10.8581 17.3604 8.72728C17.3604 6.40138 16.4584 4.21493 14.8209 2.57041C13.1834 0.925893 11.0062 0.0200195 8.69023 0.0200195C6.37422 0.0200195 4.19708 0.925893 2.55956 2.57041C0.922038 4.21493 0.0200195 6.40138 0.0200195 8.72728C0.0200195 11.0532 0.922038 13.2396 2.55956 14.8842C4.19708 16.5287 6.37422 17.4345 8.69023 17.4345C10.812 17.4345 12.8118 16.6665 14.3923 15.2746L18.9082 19.8098C19.0211 19.9231 19.169 19.9798 19.3169 19.9798C19.4648 19.9798 19.6127 19.9231 19.7256 19.8098C19.9513 19.583 19.9513 19.2157 19.7256 18.9889ZM3.3769 14.0633C1.95783 12.6379 1.17605 10.7428 1.17605 8.72728C1.17605 6.71175 1.95783 4.81667 3.3769 3.39125C4.79626 1.96612 6.68327 1.18099 8.69023 1.18099C10.6972 1.18099 12.5842 1.96612 14.0036 3.39125C15.4226 4.81667 16.2044 6.71175 16.2044 8.72728C16.2044 10.7428 15.4226 12.6379 14.0036 14.0633C12.5842 15.4885 10.6972 16.2736 8.69023 16.2736C6.68327 16.2736 4.79626 15.4885 3.3769 14.0633Z"
-              fill="black"
+          <div class="search-block">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.7256 18.9889L15.2097 14.4538C16.5957 12.8665 17.3604 10.8581 17.3604 8.72728C17.3604 6.40138 16.4584 4.21493 14.8209 2.57041C13.1834 0.925893 11.0062 0.0200195 8.69023 0.0200195C6.37422 0.0200195 4.19708 0.925893 2.55956 2.57041C0.922038 4.21493 0.0200195 6.40138 0.0200195 8.72728C0.0200195 11.0532 0.922038 13.2396 2.55956 14.8842C4.19708 16.5287 6.37422 17.4345 8.69023 17.4345C10.812 17.4345 12.8118 16.6665 14.3923 15.2746L18.9082 19.8098C19.0211 19.9231 19.169 19.9798 19.3169 19.9798C19.4648 19.9798 19.6127 19.9231 19.7256 19.8098C19.9513 19.583 19.9513 19.2157 19.7256 18.9889ZM3.3769 14.0633C1.95783 12.6379 1.17605 10.7428 1.17605 8.72728C1.17605 6.71175 1.95783 4.81667 3.3769 3.39125C4.79626 1.96612 6.68327 1.18099 8.69023 1.18099C10.6972 1.18099 12.5842 1.96612 14.0036 3.39125C15.4226 4.81667 16.2044 6.71175 16.2044 8.72728C16.2044 10.7428 15.4226 12.6379 14.0036 14.0633C12.5842 15.4885 10.6972 16.2736 8.69023 16.2736C6.68327 16.2736 4.79626 15.4885 3.3769 14.0633Z"
+                fill="black"
+              />
+            </svg>
+            <input
+              class="search-block__input"
+              placeholder="Search"
+              type="Search"
+              id="site-search"
+              name="q"
             />
-          </svg>
-          <input
-            class="search-block__input"
-            placeholder="Search"
-            type="Search"
-            id="site-search"
-            name="q"
-          />
-        </div>
+          </div>
 
-        <div class="actions">
-          <button class="button-green-border">Login in</button>
-          <button class="button">Register</button>
-        </div>
-      </header>
+          <div class="actions">
+            <button class="button-green-border">Login in</button>
+            <button class="button">Register</button>
+          </div>
+        </header>
 
-      <main class="list">
-        <ul class="tabs">
-          <li class="tabs__item green-border">Guitarists</li>
-          <li class="tabs__item">Pianists</li>
-          <li class="tabs__item">Drums</li>
-          <li class="tabs__item">Vocals</li>
-          <li class="tabs__item">Recorder</li>
-        </ul>
+        <main class="list">
+          <ul class="tabs">
+            <li class="tabs__item green-border">Guitarists</li>
+            <li class="tabs__item">Pianists</li>
+            <li class="tabs__item">Drums</li>
+            <li class="tabs__item">Vocals</li>
+            <li class="tabs__item">Recorder</li>
+          </ul>
 
-        <h1 class="list__title">
-          <div class="list__title_wrap">Guitarists.</div>
-        </h1>
+          <h1 class="list__title">
+            <div class="list__title_wrap">Guitarists.</div>
+          </h1>
 
-        <ul class="people-list">
-          <li class="people-list__item">
-            <img
-              class="people-list__image"
-              src="./images/people/OnePeople.jpg"
-              atl="people"
-            />
+          <ul class="people-list">
+            <li class="people-list__item">
+              <img
+                class="people-list__image"
+                src="./images/people/OnePeople.jpg"
+                atl="people"
+              />
 
-            <div class="people-list__wrap">
-              <span class="people-list__name">@nickportman</span>
-              <div>5.0 <img src="./images/Star.svg" /></div>
-            </div>
+              <div class="people-list__wrap">
+                <span class="people-list__name">@nickportman</span>
+                <div>5.0 <img src="./images/Star.svg" /></div>
+              </div>
 
-            <p class="people-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-            </p>
-            <div class="people-list__actions">
-              <span class="people-list__price"
-                >starting <span class="brown-text"> at 5$ </span></span
-              >
-              <a class="link-button" href="detail.html">More</a>
-            </div>
-          </li>
+              <p class="people-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="people-list__actions">
+                <span class="people-list__price"
+                  >starting <span class="brown-text"> at 5$ </span></span
+                >
+                <a class="link-button" href="detail.html">More</a>
+              </div>
+            </li>
 
-          <li class="people-list__item">
-            <img
-              class="people-list__image"
-              src="./images/people/TwoPeople.jpg"
-              atl="people"
-            />
+            <li class="people-list__item">
+              <img
+                class="people-list__image"
+                src="./images/people/TwoPeople.jpg"
+                atl="people"
+              />
 
-            <div class="people-list__wrap">
-              <span class="people-list__name">@nickportman</span>
-              <div>5.0 <img src="./images/Star.svg" /></div>
-            </div>
+              <div class="people-list__wrap">
+                <span class="people-list__name">@nickportman</span>
+                <div>5.0 <img src="./images/Star.svg" /></div>
+              </div>
 
-            <p class="people-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-            </p>
-            <div class="people-list__actions">
-              <span class="people-list__price"
-                >starting <span class="brown-text"> at 5$ </span></span
-              >
-              <a class="link-button">More</a>
-            </div>
-          </li>
+              <p class="people-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="people-list__actions">
+                <span class="people-list__price"
+                  >starting <span class="brown-text"> at 5$ </span></span
+                >
+                <a class="link-button">More</a>
+              </div>
+            </li>
 
-          <li class="people-list__item">
-            <img
-              class="people-list__image"
-              src="./images/people/ThreePeople.jpg"
-              atl="people"
-            />
+            <li class="people-list__item">
+              <img
+                class="people-list__image"
+                src="./images/people/ThreePeople.jpg"
+                atl="people"
+              />
 
-            <div class="people-list__wrap">
-              <span class="people-list__name">@nickportman</span>
-              <div>5.0 <img src="./images/Star.svg" /></div>
-            </div>
+              <div class="people-list__wrap">
+                <span class="people-list__name">@nickportman</span>
+                <div>5.0 <img src="./images/Star.svg" /></div>
+              </div>
 
-            <p class="people-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-            </p>
-            <div class="people-list__actions">
-              <span class="people-list__price"
-                >starting <span class="brown-text"> at 5$ </span></span
-              >
-              <a class="link-button">More</a>
-            </div>
-          </li>
+              <p class="people-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="people-list__actions">
+                <span class="people-list__price"
+                  >starting <span class="brown-text"> at 5$ </span></span
+                >
+                <a class="link-button">More</a>
+              </div>
+            </li>
 
-          <li class="people-list__item">
-            <img
-              class="people-list__image"
-              src="./images/people/FourPeople.jpg"
-              atl="people"
-            />
+            <li class="people-list__item">
+              <img
+                class="people-list__image"
+                src="./images/people/FourPeople.jpg"
+                atl="people"
+              />
 
-            <div class="people-list__wrap">
-              <span class="people-list__name">@nickportman</span>
-              <div>5.0 <img src="./images/Star.svg" /></div>
-            </div>
+              <div class="people-list__wrap">
+                <span class="people-list__name">@nickportman</span>
+                <div>5.0 <img src="./images/Star.svg" /></div>
+              </div>
 
-            <p class="people-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-            </p>
-            <div class="people-list__actions">
-              <span class="people-list__price"
-                >starting <span class="brown-text"> at 5$ </span></span
-              >
-              <a class="link-button">More</a>
-            </div>
-          </li>
+              <p class="people-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="people-list__actions">
+                <span class="people-list__price"
+                  >starting <span class="brown-text"> at 5$ </span></span
+                >
+                <a class="link-button">More</a>
+              </div>
+            </li>
 
-          <li class="people-list__item">
-            <img
-              class="people-list__image"
-              src="./images/people/FivePeople.jpg"
-              atl="people"
-            />
+            <li class="people-list__item">
+              <img
+                class="people-list__image"
+                src="./images/people/FivePeople.jpg"
+                atl="people"
+              />
 
-            <div class="people-list__wrap">
-              <span class="people-list__name">@nickportman</span>
-              <div>5.0 <img src="./images/Star.svg" /></div>
-            </div>
+              <div class="people-list__wrap">
+                <span class="people-list__name">@nickportman</span>
+                <div>5.0 <img src="./images/Star.svg" /></div>
+              </div>
 
-            <p class="people-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-            </p>
-            <div class="people-list__actions">
-              <span class="people-list__price"
-                >starting <span class="brown-text"> at 5$ </span></span
-              >
-              <a class="link-button">More</a>
-            </div>
-          </li>
+              <p class="people-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="people-list__actions">
+                <span class="people-list__price"
+                  >starting <span class="brown-text"> at 5$ </span></span
+                >
+                <a class="link-button">More</a>
+              </div>
+            </li>
 
-          <li class="people-list__item">
-            <img
-              class="people-list__image"
-              src="./images/people/SixPeople.jpg"
-              atl="people"
-            />
+            <li class="people-list__item">
+              <img
+                class="people-list__image"
+                src="./images/people/SixPeople.jpg"
+                atl="people"
+              />
 
-            <div class="people-list__wrap">
-              <span class="people-list__name">@nickportman</span>
-              <div>5.0 <img src="./images/Star.svg" /></div>
-            </div>
+              <div class="people-list__wrap">
+                <span class="people-list__name">@nickportman</span>
+                <div>5.0 <img src="./images/Star.svg" /></div>
+              </div>
 
-            <p class="people-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-            </p>
-            <div class="people-list__actions">
-              <span class="people-list__price"
-                >starting <span class="brown-text"> at 5$ </span></span
-              >
-              <a class="link-button">More</a>
-            </div>
-          </li>
-        </ul>
+              <p class="people-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="people-list__actions">
+                <span class="people-list__price"
+                  >starting <span class="brown-text"> at 5$ </span></span
+                >
+                <a class="link-button">More</a>
+              </div>
+            </li>
+          </ul>
 
-        <div class="pagination">
-          <div class="pagination__item">1</div>
-          <div class="pagination__item_green">2</div>
-          <div class="pagination__item">></div>
-        </div>
-      </main>
+          <div class="pagination">
+            <div class="pagination__item">1</div>
+            <div class="pagination__item_green">2</div>
+            <div class="pagination__item">></div>
+          </div>
+        </main>
 
-      <footer>
-        <ul>
-          <li class="footer__nav-item"><a href="#">Mobile App</a></li>
-          <li class="footer__nav-item"><a href="#">Community</a></li>
-          <li class="footer__nav-item"><a href="#">Company</a></li>
-          <li class="footer__logo">
-            <a href="/"><img src="./images/logo.png" alt="logo" /></a>
-          </li>
-          <li class="footer__nav-item"><a href="#">Help desk</a></li>
-          <li class="footer__nav-item"><a href="#">Blog</a></li>
-          <li class="footer__nav-item"><a href="#">Resources</a></li>
-        </ul>
+        <footer>
+          <ul>
+            <li class="footer__nav-item"><a href="#">Mobile App</a></li>
+            <li class="footer__nav-item"><a href="#">Community</a></li>
+            <li class="footer__nav-item"><a href="#">Company</a></li>
+            <li class="footer__logo">
+              <a href="/"><img src="./images/logo.png" alt="logo" /></a>
+            </li>
+            <li class="footer__nav-item"><a href="#">Help desk</a></li>
+            <li class="footer__nav-item"><a href="#">Blog</a></li>
+            <li class="footer__nav-item"><a href="#">Resources</a></li>
+          </ul>
 
-        <div class="copy">© 2022 Session artist All rights reserved</div>
-      </footer>
+          <div class="copy">© 2022 Session artist All rights reserved</div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

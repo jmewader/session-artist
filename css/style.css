@@ -426,3 +426,37 @@ footer ul {
 .copy {
   font-family: "Rubik";
 }
+
+.blur {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.blur:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 234px;
+  height: 234px;
+  left: -209px;
+  top: 409px;
+  background-color: #007163;
+  opacity: 0.3;
+  filter: blur(50px);
+}
+
+.blur:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 234px;
+  height: 234px;
+  left: 1408px;
+  top: 878px;
+  background-color: #a67c52;
+  opacity: 0.3;
+  filter: blur(50px);
+}
