@@ -86,6 +86,10 @@ main {
   color: var(--white-text-color);
 }
 
+.link-button:hover {
+  background-color: #007163cc;
+}
+
 .button {
   min-height: 45px;
   min-width: 165px;
