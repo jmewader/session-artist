@@ -454,8 +454,8 @@ footer ul {
   position: absolute;
   width: 234px;
   height: 234px;
-  left: 1408px;
-  top: 878px;
+  right: -209px;
+  top: 50%;
   background-color: #a67c52;
   opacity: 0.3;
   filter: blur(50px);
