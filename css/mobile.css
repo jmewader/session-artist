@@ -3,6 +3,10 @@
     display: none;
   }
 
+  .container {
+    padding: 0 15px;
+  }
+
   header {
     flex-wrap: nowrap;
     padding: 16px 0px 20px;

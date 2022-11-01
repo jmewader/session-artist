@@ -17,3 +17,9 @@
     gap: 30px;
   }
 }
+
+@media (max-width: 800px) {
+  .tabs {
+    display: none;
+  }
+}
