@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/detail.css" rel="stylesheet" />
+    <link href="./css/tablet.css" rel="stylesheet" />
+    <link href="./css/mobile.css" rel="stylesheet" />
     <title>Session Artist</title>
   </head>
 
@@ -13,7 +15,24 @@
     <div class="blur">
       <div class="container">
         <header>
-          <a href="/"><img src="./images/logo.png" alt="logo" /></a>
+          <div class="search-mobile">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.7256 18.9889L15.2097 14.4538C16.5957 12.8665 17.3604 10.8581 17.3604 8.72728C17.3604 6.40138 16.4584 4.21493 14.8209 2.57041C13.1834 0.925893 11.0062 0.0200195 8.69023 0.0200195C6.37422 0.0200195 4.19708 0.925893 2.55956 2.57041C0.922038 4.21493 0.0200195 6.40138 0.0200195 8.72728C0.0200195 11.0532 0.922038 13.2396 2.55956 14.8842C4.19708 16.5287 6.37422 17.4345 8.69023 17.4345C10.812 17.4345 12.8118 16.6665 14.3923 15.2746L18.9082 19.8098C19.0211 19.9231 19.169 19.9798 19.3169 19.9798C19.4648 19.9798 19.6127 19.9231 19.7256 19.8098C19.9513 19.583 19.9513 19.2157 19.7256 18.9889ZM3.3769 14.0633C1.95783 12.6379 1.17605 10.7428 1.17605 8.72728C1.17605 6.71175 1.95783 4.81667 3.3769 3.39125C4.79626 1.96612 6.68327 1.18099 8.69023 1.18099C10.6972 1.18099 12.5842 1.96612 14.0036 3.39125C15.4226 4.81667 16.2044 6.71175 16.2044 8.72728C16.2044 10.7428 15.4226 12.6379 14.0036 14.0633C12.5842 15.4885 10.6972 16.2736 8.69023 16.2736C6.68327 16.2736 4.79626 15.4885 3.3769 14.0633Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+
+          <a class="header-logo" href="/"
+            ><img src="./images/logo.png" alt="logo"
+          /></a>
 
           <div class="search-block">
             <svg
@@ -37,8 +56,32 @@
             />
           </div>
 
+          <div class="burger">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.2188 9.21875H0.78125C0.349766 9.21875 0 9.56852 0 10C0 10.4315 0.349766 10.7812 0.78125 10.7812H19.2188C19.6502 10.7812 20 10.4315 20 10C20 9.56852 19.6502 9.21875 19.2188 9.21875Z"
+                fill="black"
+              />
+              <path
+                d="M19.2188 2.96875H0.78125C0.349766 2.96875 0 3.31852 0 3.75C0 4.18148 0.349766 4.53125 0.78125 4.53125H19.2188C19.6502 4.53125 20 4.18148 20 3.75C20 3.31852 19.6502 2.96875 19.2188 2.96875Z"
+                fill="black"
+              />
+              <path
+                d="M19.2188 15.4688H0.78125C0.349766 15.4688 0 15.8185 0 16.25C0 16.6815 0.349766 17.0312 0.78125 17.0312H19.2188C19.6502 17.0312 20 16.6815 20 16.25C20 15.8185 19.6502 15.4688 19.2188 15.4688Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+
           <div class="actions">
-            <button class="button-green-border">Log out</button>
+            <button class="button-green-border">Login in</button>
+            <button class="button">Register</button>
           </div>
         </header>
 
@@ -260,17 +303,23 @@
         </main>
 
         <footer>
-          <ul>
-            <li class="footer__nav-item"><a href="#">Mobile App</a></li>
-            <li class="footer__nav-item"><a href="#">Community</a></li>
-            <li class="footer__nav-item"><a href="#">Company</a></li>
-            <li class="footer__logo">
+          <div class="footer">
+            <ul>
+              <li class="footer__nav-item"><a href="#">Mobile App</a></li>
+              <li class="footer__nav-item"><a href="#">Community</a></li>
+              <li class="footer__nav-item"><a href="#">Company</a></li>
+            </ul>
+
+            <div class="footer__logo">
               <a href="/"><img src="./images/logo.png" alt="logo" /></a>
-            </li>
-            <li class="footer__nav-item"><a href="#">Help desk</a></li>
-            <li class="footer__nav-item"><a href="#">Blog</a></li>
-            <li class="footer__nav-item"><a href="#">Resources</a></li>
-          </ul>
+            </div>
+
+            <ul>
+              <li class="footer__nav-item"><a href="#">Help desk</a></li>
+              <li class="footer__nav-item"><a href="#">Blog</a></li>
+              <li class="footer__nav-item"><a href="#">Resources</a></li>
+            </ul>
+          </div>
 
           <div class="copy">© 2022 Session artist All rights reserved</div>
         </footer>

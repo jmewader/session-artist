@@ -1,0 +1,19 @@
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
