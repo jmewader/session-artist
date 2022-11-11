@@ -126,6 +126,19 @@
     grid-template-columns: 1fr;
   }
 
+  .detail__title {
+    font-size: 24px;
+    margin: 0 0 15px;
+  }
+
+  .detail__description {
+    margin: 15px 0px 20px;
+  }
+
+  .detail__tabs {
+    margin:  0 0 20px;
+  }
+
   .footer {
     flex-wrap: wrap;
   }
