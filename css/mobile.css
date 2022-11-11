@@ -122,6 +122,10 @@
     font-size: 16px;
   }
 
+  .detail__block {
+    grid-template-columns: 1fr;
+  }
+
   .footer {
     flex-wrap: wrap;
   }

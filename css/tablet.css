@@ -7,9 +7,17 @@
     flex-wrap: wrap;
   }
 
+  .search-block {
+    order: 1;
+    max-width: 100%;
+  }
+
   .actions {
-    width: 100%;
-    justify-content: center;
+    width: auto;
+  }
+
+  .detail {
+    margin: 30px 0 50px;
   }
 
   footer ul {
@@ -21,5 +29,13 @@
 @media (max-width: 800px) {
   .tabs {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .detail__tabs__item {
+    padding: 0px 10px;
+    font-weight: 600;
+    font-size: 16px;
   }
 }
