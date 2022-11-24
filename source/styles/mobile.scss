@@ -1,8 +1,4 @@
 @media (max-width: 600px) {
-  header .actions {
-    display: none;
-  }
-
   .container {
     padding: 0 15px;
   }
@@ -10,26 +6,34 @@
   header {
     flex-wrap: nowrap;
     padding: 16px 0px 20px;
+
+    & .actions {
+      display: none;
+    }
   }
 
-  .header-logo img {
-    height: 54px;
+  .header-logo {
+    & img {
+      height: 54px;
+    }
   }
 
   .search-block {
     display: none;
+
+    & svg {
+      display: none;
+    }
   }
 
   .search-block__input {
-    display: none;
-  }
-  .search-block svg {
     display: none;
   }
 
   .search-mobile {
     display: flex;
   }
+
   .burger {
     display: flex;
   }
@@ -39,6 +43,20 @@
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
+
+    & .offer__list {
+      margin: 23px 0px 50px;
+      gap: 20px;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    & .offer__item {
+      min-width: 155px;
+    }
   }
 
   .offer__info {
@@ -47,10 +65,10 @@
 
   .offer__title_wrap {
     width: min-content;
-  }
 
-  .offer__title_wrap:before {
-    bottom: 8px;
+    &:before {
+      bottom: 8px;
+    }
   }
 
   .offer__title {
@@ -62,29 +80,19 @@
   .offer__description {
     font-size: 18px;
   }
-  .offer__info:before {
-    width: 100px;
-    height: 100px;
-    filter: blur(25px);
-  }
 
-  .offer__info:after {
-    width: 100px;
-    height: 100px;
-    filter: blur(25px);
-  }
+  .offer__info {
+    &:before {
+      width: 100px;
+      height: 100px;
+      filter: blur(25px);
+    }
 
-  .offer .offer__list {
-    margin: 23px 0px 50px;
-  }
-
-  .offer .offer__list::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
-
-  .offer .offer__item {
-    min-width: 155px;
+    &:after {
+      width: 100px;
+      height: 100px;
+      filter: blur(25px);
+    }
   }
 
   .social {
@@ -99,15 +107,19 @@
   .social__item {
     width: 30px;
     height: 30px;
-  }
 
-  .social__item svg {
-    width: 30px;
-    height: 30px;
+    & svg {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   .copy {
     font-size: 14px;
+  }
+
+  .actions {
+    gap: 20px;
   }
 
   .button-brown {
@@ -136,11 +148,16 @@
   }
 
   .detail__tabs {
-    margin:  0 0 20px;
+    margin: 0 0 20px;
   }
 
   .footer {
     flex-wrap: wrap;
+
+    & ul {
+      width: 50%;
+      order: 1;
+    }
   }
 
   .footer__logo {
@@ -148,14 +165,9 @@
     display: flex;
     justify-content: center;
     margin: 0 0 30px;
-  }
 
-  .footer__logo img {
-    height: 54px;
-  }
-
-  footer ul {
-    width: 50%;
-    order: 1;
+    & img {
+      height: 54px;
+    }
   }
 }
