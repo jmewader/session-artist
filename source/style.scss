@@ -3,10 +3,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-:root {
-  --main-bg-color: #007163;
-  --white-text-color: #fff;
+$fw: 400;
+$--main-bg-color: #007163;
+$--white-text-color: #fff;
+
+%btn{
+    min-height: 45px;
+    min-width: 165px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
 }
+
+@mixin fontw ($fw){
+    font-weight: $fw;
+}
+
 
 html,
 body {
@@ -90,19 +104,21 @@ main {
   justify-content: center;
   min-height: 45px;
   min-width: 134px;
-  font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.25s;
-  background-color: var(--main-bg-color);
+  background-color: $--main-bg-color;
   border: none;
   border-radius: 5px;
-  color: var(--white-text-color);
+  color: $--white-text-color;
+  @include fontw(400);
 
   &:hover {
     background-color: #007163cc;
   }
+
+ 
 }
 
 .button {
@@ -113,27 +129,23 @@ main {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.25s;
-  background-color: var(--main-bg-color);
+  background-color: $--main-bg-color;
   border: none;
   border-radius: 5px;
-  color: var(--white-text-color);
+  color: $--white-text-color;
 
   &:hover {
     background-color: #007163cc;
   }
+
+  
 }
 
 .button-green-border {
   background-color: transparent;
-  min-height: 45px;
-  min-width: 165px;
-  font-weight: 600;
-  font-size: 16px;
   border: 1px solid #007163;
   color: #007163;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.25s;
+  @extend %btn;
 
   &:hover {
     background-color: #0071630d;
@@ -142,15 +154,9 @@ main {
 
 .button-green-border-light {
   background: rgba(0, 113, 99, 0.1);
-  min-height: 45px;
-  min-width: 165px;
-  font-weight: 600;
-  font-size: 16px;
   border: 1px solid #007163;
   color: #007163;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.25s;
+  @extend %btn;
 
   &:hover {
     background-color: #00716338;
@@ -158,16 +164,10 @@ main {
 }
 
 .button-brown {
-  min-height: 45px;
-  min-width: 165px;
-  font-weight: 600;
-  font-size: 16px;
   background-color: rgba(166, 124, 82, 0.1);
   border: 1px solid #a67c52;
-  border-radius: 5px;
   color: #a67c52;
-  cursor: pointer;
-  transition: 0.25s;
+  @extend %btn;
 
   &:hover {
     background-color: #a67c5238;
@@ -437,7 +437,7 @@ footer {
   transition: 0.25s;
 
   &:hover {
-    color: var(--main-bg-color);
+    color: $--main-bg-color;
   }
 }
 

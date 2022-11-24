@@ -2,9 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-:root {
-  --main-bg-color: #007163;
-  --white-text-color: #fff; }
+.button-green-border, .button-green-border-light, .button-brown {
+  min-height: 45px;
+  min-width: 165px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s; }
 
 html,
 body {
@@ -76,15 +81,15 @@ main {
   justify-content: center;
   min-height: 45px;
   min-width: 134px;
-  font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.25s;
-  background-color: var(--main-bg-color);
+  background-color: #007163;
   border: none;
   border-radius: 5px;
-  color: var(--white-text-color); }
+  color: #fff;
+  font-weight: 400; }
   .link-button:hover {
     background-color: #007163cc; }
 
@@ -96,52 +101,31 @@ main {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.25s;
-  background-color: var(--main-bg-color);
+  background-color: #007163;
   border: none;
   border-radius: 5px;
-  color: var(--white-text-color); }
+  color: #fff; }
   .button:hover {
     background-color: #007163cc; }
 
 .button-green-border {
   background-color: transparent;
-  min-height: 45px;
-  min-width: 165px;
-  font-weight: 600;
-  font-size: 16px;
   border: 1px solid #007163;
-  color: #007163;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.25s; }
+  color: #007163; }
   .button-green-border:hover {
     background-color: #0071630d; }
 
 .button-green-border-light {
   background: rgba(0, 113, 99, 0.1);
-  min-height: 45px;
-  min-width: 165px;
-  font-weight: 600;
-  font-size: 16px;
   border: 1px solid #007163;
-  color: #007163;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.25s; }
+  color: #007163; }
   .button-green-border-light:hover {
     background-color: #00716338; }
 
 .button-brown {
-  min-height: 45px;
-  min-width: 165px;
-  font-weight: 600;
-  font-size: 16px;
   background-color: rgba(166, 124, 82, 0.1);
   border: 1px solid #a67c52;
-  border-radius: 5px;
-  color: #a67c52;
-  cursor: pointer;
-  transition: 0.25s; }
+  color: #a67c52; }
   .button-brown:hover {
     background-color: #a67c5238; }
 
@@ -363,7 +347,7 @@ footer {
 .footer__nav-item {
   transition: 0.25s; }
   .footer__nav-item:hover {
-    color: var(--main-bg-color); }
+    color: #007163; }
 
 .footer__logo {
   display: flex;
