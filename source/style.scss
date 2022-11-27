@@ -7,20 +7,19 @@ $fw: 400;
 $--main-bg-color: #007163;
 $--white-text-color: #fff;
 
-%btn{
-    min-height: 45px;
-    min-width: 165px;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.25s;
+%btn {
+  min-height: 45px;
+  min-width: 165px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
-@mixin fontw ($fw){
-    font-weight: $fw;
+@mixin fontw($fw) {
+  font-weight: $fw;
 }
-
 
 html,
 body {
@@ -117,8 +116,6 @@ main {
   &:hover {
     background-color: #007163cc;
   }
-
- 
 }
 
 .button {
@@ -137,8 +134,6 @@ main {
   &:hover {
     background-color: #007163cc;
   }
-
-  
 }
 
 .button-green-border {
@@ -495,22 +490,66 @@ footer {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 15px;
 }
 
-.modal-content {
-  background-color: #fefefe;
+.modal__content {
+  background-color: #ffffff;
+  border-radius: 5px;
   margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  padding: 25px 30px 40px;
+  width: 100%;
+  max-width: 560px;
   z-index: 1000;
+  position: relative;
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal__title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 24px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 0 15px;
+}
+
+.modal__inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 25px 0 20px;
+}
+
+.modal__inputs-item {
+  width: 100%;
+}
+
+.modal__inputs-item input {
+  width: 100%;
+  height: 45px;
+  padding: 13px 20px;
+  opacity: 0.5;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal__actions {
+  display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0px 0px;
+}
+
+.modal__close {
+  color: #000000;
+  font-size: 26px;
+  position: absolute;
+  display: flex;
+  right: 25px;
+  top: 25px;
 
   &:hover,
   &:focus {

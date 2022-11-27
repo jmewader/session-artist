@@ -42,16 +42,28 @@
 
         <div class="actions">
           <button class="button-green-border">Login in</button>
-          <button class="button">Register</button>
+          <button id="openModal" class="button">Register</button>
         </div>
       </header>
 
       <main class="offer">
         <div id="modal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Register</h2>
-            <input />
+          <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            
+            <h2 class="modal__title">Register</h2>
+
+            <form>
+              <div class="modal__inputs">
+                <div class="modal__inputs-item"><input placeholder="Enter your email" /></div>
+                <div class="modal__inputs-item"><input placeholder="Choose a Username" /></div>
+                <div class="modal__inputs-item"><input placeholder="Choose a Password" /></div>
+              </div>
+            </form>
+
+            <div class="modal__actions">
+              <button class="button">Join</button>
+            </div>
           </div>
         </div>
 
